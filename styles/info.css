@@ -1,0 +1,11 @@
+.info{
+    margin-top: 3em;
+    & p{
+        display: inline-block;
+        vertical-align: top;
+        width: 80%;
+        padding-right: 2em;
+        text-align: left;
+    }
+
+}
