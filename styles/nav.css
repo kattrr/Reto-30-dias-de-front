@@ -1,0 +1,23 @@
+.nav-bar{
+    background: #4f517d;
+    padding: 1rem 2rem;
+    font-size: 1.25em; 
+    /* margin-bottom: 3em; */
+    /* box-shadow: 0px 4px 10px 0px #4f517d ; */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-list{
+    list-style: none;
+    text-align: right;
+    
+    & li {
+        display: inline-block;
+        margin: 0 2em;
+        & a{
+        color: white;
+        text-decoration: none;
+        }
+    }
+}

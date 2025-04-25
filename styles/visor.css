@@ -1,0 +1,18 @@
+.container{
+  
+  box-sizing: border-box;
+}
+#pdf-render {
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 800px;
+   
+  }
+  #navigation {
+    text-align: center;
+    margin-top: 10px;
+  }
+  button {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }

@@ -1,0 +1,31 @@
+
+.banner{
+    min-height: 31.25vw;
+    background-color: #f0f0f0;
+    background-image: url(../img/bg-xl.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 3em 1em 3em;
+    text-align: center;
+    font-size: 24px;
+    z-index: 2;
+    color: #333;
+    & hr {
+        margin-top: 7em;
+    }
+    & .info-img{
+        font-size: 1rem;
+        margin: 0;
+        padding-top: 1.5em ;
+        text-align: left;
+    }
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244, 240, 249, .6);
+}
