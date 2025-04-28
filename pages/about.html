@@ -17,17 +17,17 @@
     <link rel="stylesheet" href="../styles/nav.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
 
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/bCard.css" />
-    
+    <link rel="stylesheet" href="../styles/contacto.css" />
   </head>
   <body>
     <header>
       <nav class="nav-bar">
         <ul class="nav-list">
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./pages/about.html">Acerca de</a></li>
-          <li><a href="./pages/about.html?contacto">Contacto</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+          <li><a href="about.html?#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -67,8 +67,13 @@
             </div>
             <div class="logo-bottom-text">
               <span>contactame</span>
-              <br>
-              <a href="mailto:katheiverar@gmail.com"><i class="fa-solid fa-square-envelope" style="color: #4f517d;"></i></a>
+              <br />
+              <a href="mailto:katheiverar@gmail.com"
+                ><i
+                  class="fa-solid fa-square-envelope"
+                  style="color: #4f517d"
+                ></i
+              ></a>
               <a href="https://www.linkedin.com/in/katheringriverar/"
                 ><i class="fa-brands fa-linkedin" style="color: #4f517d"></i
               ></a>
@@ -78,10 +83,52 @@
                   style="color: #4f517d"
                 ></i
               ></a>
-                </div>
+            </div>
           </div>
           <span class="bottom-text">KRR</span>
         </div>
+      </section>
+      <section id="contacto">
+        <form class="formulario-contacto" aria-label="Formulario de contacto">
+          <h2>Contáctame</h2>
+
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              aria-required="true"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
     <footer>
