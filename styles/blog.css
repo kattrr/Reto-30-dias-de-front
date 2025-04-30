@@ -1,0 +1,81 @@
+.productos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 100px); /* 8 filas de 100px */
+
+  column-gap: 3em;
+  row-gap: 1em;
+  grid-template-areas:
+    "T T T T T T T T T T T T"
+    "a a a a o o o o c c c c"
+    "a a a a b b b b c c c c"
+    "a a a a b b b b c c c c"
+    "a a a a b b b b c c c c"
+    "d d d d b b b b f f f f"
+    "d d d d e e e e f f f f"
+    "d d d d e e e e f f f f"
+    "z z z z e e e e y y y y";
+  & h1 {
+    grid-area: T;
+    margin: 0;
+  }
+  & img{
+    border-radius: 1rem;
+  }
+}
+.producto {
+  display: flex;
+  flex-direction: row;
+  & img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  & .producto-info {
+    text-align: center;
+    position: relative;
+    top: 300px;
+    min-height: 150px;
+    width: 100%;
+    padding: 1rem;
+
+  }
+    & p{
+      margin-top: 1em;
+    }
+  }
+  & .producto-info::before {
+    content: ' ';
+    background: linear-gradient(to top, #a997df, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius:0 0 1rem 1rem;
+
+  }
+
+
+.productos .card-1 {
+  grid-area: a;
+}
+.productos .card-2 {
+  grid-area: b;
+}
+.productos .card-3 {
+  grid-area: c;
+}
+.productos .card-4 {
+  grid-area: d;
+}
+.productos .card-5 {
+  grid-area: e;
+}
+.productos .card-6 {
+  grid-area: f;
+}
+
+:is(.card-1, .card-2, .card-3, .card-4, .card-5, .card-6){
+  border-radius: 1rem;
+}
