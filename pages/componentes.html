@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/nav.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/princingPlan.css" />
+    <link rel="stylesheet" href="../styles/reloj.css">
   </head>
   <body>
     <header>
@@ -15,6 +16,7 @@
         <ul class="nav-list">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="componentes.html">Componentes / Showcase</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">Acerca de</a></li>
           <li><a href="about.html?#contacto">Contacto</a></li>
         </ul>
@@ -1116,7 +1118,12 @@ z"
           </div>
         </div>
       </section>
-      <section></section>
+      <section id="reloj-digital">
+        <div class="clock">
+          <div class="label">Hora actual</div>
+          <div class="time" id="time">--:--:--</div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-content">
@@ -1144,5 +1151,6 @@ z"
         <p>Desarrollado por Kathering Rivera</p>
       </div>
     </footer>
+    <script src="../js/reloj.js"></script>
   </body>
 </html>
