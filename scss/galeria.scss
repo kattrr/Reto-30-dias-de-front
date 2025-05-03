@@ -1,39 +1,128 @@
 // you can change these three
-$c: #E5E0F5; // grid lines
+$c: #e5e0f5; // grid lines
 $d: 1em; // grid cell size
 $l: 1px; // line thickness
 
 // computed value, don't change
-$o: .5*$l;
+$o: 0.5 * $l;
 
-.galeria{
-    padding: 4em 0;
-	margin-bottom: 6em;
-    background: 
-		/* horizontal and vertical lines */
-		conic-gradient(from 90deg at $l $l, 
-				#0000 25%, $c 0%) 
-			#{-1*$o -1*$o}/ #{$d $d}, 
-		/* main diagonal */
-		linear-gradient(45deg, 
-				#0000 calc(50% + -1*#{$o}), 
-				$c 0 calc(50% + #{$o}), #0000 0) 0 0/ #{2*$d 2*$d}, 
-		/* secondary diagonal */
-		linear-gradient(-45deg, 
-				#0000 calc(50% + -1*#{$o}), 
-				$c 0 calc(50% + #{$o}), #0000 0) 0 0/ #{2*$d 2*$d}
-		
+.galeria {
+  padding: 4em 0;
+  margin-bottom: 6em;
+  background: 
+		/* horizontal and vertical lines */ conic-gradient(
+        from 90deg at $l $l,
+        #0000 25%,
+        $c 0%
+      )
+      #{-1 * $o -1 * $o}/ #{$d $d},
+    /* main diagonal */
+      linear-gradient(
+        45deg,
+        #0000 calc(50% + -1 *#{$o}),
+        $c 0 calc(50% + #{$o}),
+        #0000 0
+      )
+      0 0 / #{2 * $d 2 * $d},
+    /* secondary diagonal */
+      linear-gradient(
+        -45deg,
+        #0000 calc(50% + -1 *#{$o}),
+        $c 0 calc(50% + #{$o}),
+        #0000 0
+      )
+      0 0 / #{2 * $d 2 * $d};
 }
-.galeria .img-principal{
-	width: 25%;
+.img-container{
+	padding: 0 11.5dvw;
 }
-.galeria .img-carousel{
-	margin-top: 3em;
+.img-dia {
+  display: none;
+	width: 100%;
+	max-height: 60vmin;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
-.galeria .img-carousel .img-dia{
-	display: inline-block;
-	max-width: 150px;
-	img{
-		width: 100%;
-	}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.25rem;
+	border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 9vmax;
+  border-radius: 0 3px 3px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.prev {
+  left: 9vmax;
+  border-radius: 3px 0  0 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numberText {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+	z-index: 4;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+	
+}
+#caption{
+	color: #f2f2f2;
+	margin: 1rem 0;
+}
+.row{
+	max-height: 137px;
+	overflow: hidden;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }

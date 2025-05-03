@@ -1,23 +1,108 @@
 .galeria {
   padding: 4em 0;
   margin-bottom: 6em;
-  background: conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 25%, #E5E0F5 0%) -0.5px -0.5px/1em 1em, linear-gradient(45deg, rgba(0, 0, 0, 0) calc(50% + -1 * 0.5px), #E5E0F5 0 calc(50% + 0.5px), rgba(0, 0, 0, 0) 0) 0 0/2em 2em, linear-gradient(-45deg, rgba(0, 0, 0, 0) calc(50% + -1 * 0.5px), #E5E0F5 0 calc(50% + 0.5px), rgba(0, 0, 0, 0) 0) 0 0/2em 2em;
+  background: conic-gradient(from 90deg at 1px 1px, rgba(0, 0, 0, 0) 25%, #e5e0f5 0%) -0.5px -0.5px/1em 1em, linear-gradient(45deg, rgba(0, 0, 0, 0) calc(50% + -1 * 0.5px), #e5e0f5 0 calc(50% + 0.5px), rgba(0, 0, 0, 0) 0) 0 0/2em 2em, linear-gradient(-45deg, rgba(0, 0, 0, 0) calc(50% + -1 * 0.5px), #e5e0f5 0 calc(50% + 0.5px), rgba(0, 0, 0, 0) 0) 0 0/2em 2em;
 }
 
-.galeria .img-principal {
-  width: 25%;
+.img-container {
+  padding: 0 11.5dvw;
 }
 
-.galeria .img-carousel {
-  margin-top: 3em;
-}
-
-.galeria .img-carousel .img-dia {
-  display: inline-block;
-  max-width: 150px;
-}
-.galeria .img-carousel .img-dia img {
+.img-dia {
+  display: none;
   width: 100%;
+  max-height: 60vmin;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 9vmax;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 9vmax;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numberText {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+#caption {
+  color: #f2f2f2;
+  margin: 1rem 0;
+}
+
+.row {
+  max-height: 137px;
+  overflow: hidden;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=galeria.css.map */
