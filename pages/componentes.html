@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../styles/nav.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/princingPlan.css" />
-    <link rel="stylesheet" href="../styles/reloj.css">
+    <link rel="stylesheet" href="../styles/reloj.css" />
+    <link rel="stylesheet" href="../styles/toDoList.css" />
+    <link rel="stylesheet" href="../styles/calculadora.css" />
   </head>
   <body>
     <header>
@@ -699,10 +701,12 @@ z"
           </svg>
           <div class="textBox">
             <p class="text head">Plan Intermedio</p>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
               reprehenderit asperiores adipisci inventore dicta consequatur
               libero, distinctio, quia quos quaerat in necessitatibus dolorem
-              quis quo nostrum, non eveniet? Doloremque, corrupti?</span>
+              quis quo nostrum, non eveniet? Doloremque, corrupti?</span
+            >
             <p class="text price">$9.600 COP/mes</p>
           </div>
         </div>
@@ -1110,10 +1114,12 @@ z"
           </svg>
           <div class="textBox">
             <p class="text head">Plan Avanzado</p>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
               reprehenderit asperiores adipisci inventore dicta consequatur
               libero, distinctio, quia quos quaerat in necessitatibus dolorem
-              quis quo nostrum, non eveniet? Doloremque, corrupti?</span>
+              quis quo nostrum, non eveniet? Doloremque, corrupti?</span
+            >
             <p class="text price">$17.900 COP/mes</p>
           </div>
         </div>
@@ -1124,7 +1130,45 @@ z"
           <div class="time" id="time">--:--:--</div>
         </div>
       </section>
+      <section id="to-do-list">
+        <div class="container">
+          <h2>
+            <img src="../img/list.png" alt="lista" />
+            Lista de tareas
+          </h2>
+          <div class="input-container">
+            <input type="text" id="task-input" placeholder="Añadir Tarea ..." />
+            <button id="add-task-btn" onclick="addTask()">Agregar</button>
+          </div>
+          <ul id="task-list"></ul>
+        </div>
+      </section>
+      <section >
+        <div id="calculator">
+          <input type="text" id="display" readonly />
+          <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operators">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operators">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operators">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operators">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" >=</button>
+            <button onclick="clearDisplay()" class="operators">C</button>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <div class="footer-content">
         <div class="logo">
@@ -1152,5 +1196,7 @@ z"
       </div>
     </footer>
     <script src="../js/reloj.js"></script>
+    <script src="../js/toDoList.js"></script>
+    <script src="../js/calculadora.js"></script>
   </body>
 </html>
