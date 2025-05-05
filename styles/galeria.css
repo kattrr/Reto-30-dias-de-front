@@ -15,6 +15,10 @@
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.img-dia img {
+  width: 100%;
+  height: auto;
+}
 
 .cursor {
   cursor: pointer;
@@ -103,6 +107,48 @@
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-content:hover {
+  cursor: zoom-out;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#modal-caption {
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=galeria.css.map */

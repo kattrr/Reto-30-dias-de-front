@@ -84,7 +84,13 @@
           <!-- img full width -->
           <div class="img-dia">
             <div class="numberText">1/30</div>
-            <img src="./img/dia-1.webp" alt="imagen dia 1" />
+            <img
+              src="./img/dia-1.webp"
+              alt="Imagen dia 1"
+              class="demo cursor"
+              style="width: 100%"
+              onclick="openModal(this)"
+            />
           </div>
           <div class="img-dia">
             <div class="numberText">2/30</div>
@@ -306,6 +312,11 @@
               />
             </div>
           </div>
+        </div>
+        <div id="modal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modal-img" />
+          <div id="modal-caption"></div>
         </div>
       </section>
     </main>
