@@ -1,0 +1,53 @@
+.intro {
+  background-color: #ffb000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  & h1 {
+    margin: 0;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  & .featured-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  & h2 {
+    color: #c1440e;
+    margin-top: 2rem;
+  }
+  & ul{
+    list-style: none;
+    
+    
+  }
+  & ul,
+  ol {
+    text-align: left;
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+  }
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #ffb000;
+}
