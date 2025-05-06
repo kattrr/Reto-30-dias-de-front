@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/reloj.css" />
     <link rel="stylesheet" href="../styles/toDoList.css" />
     <link rel="stylesheet" href="../styles/calculadora.css" />
+    <link rel="stylesheet" href="../styles/juegoNumeros.css" />
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -1134,7 +1135,7 @@ z"
           <ul id="task-list"></ul>
         </div>
       </section>
-      <section >
+      <section id="calculadora">
         <div id="calculator">
           <input type="text" id="display" readonly />
           <div id="keys">
@@ -1153,15 +1154,27 @@ z"
             <button onclick="appendToDisplay('/')" class="operators">/</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()" >=</button>
+            <button onclick="calculate()">=</button>
             <button onclick="clearDisplay()" class="operators">C</button>
           </div>
         </div>
+      </section>
+
+      <section id="juego-numeros">
+        <h1>Adivina el número</h1>
+        <p>Adivina el número secreto entre 1 y 100.</p>
+        <div class="input-container-num">
+          <input type="number" id="guessInput" />
+          <button id="guessButton">Adivinar</button>
+        </div>
+        <p id="result"></p>
+        <button id="restartButton">Reiniciar</button>
       </section>
     </main>
     <footer></footer>
     <script src="../js/reloj.js"></script>
     <script src="../js/toDoList.js"></script>
     <script src="../js/calculadora.js"></script>
+    <script src="../js/juegoNumeros.js"></script>
   </body>
 </html>
