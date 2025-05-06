@@ -72,3 +72,37 @@ dialog {
   ;
   pointer-events: none; /* Evita interacciones mientras el blur está activo */
 }
+.boton-animado {
+  width: 100%;
+  background-color: rgb(140, 255, 218);
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  margin: 1em 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  animation: pulso 2s infinite ease-in-out;
+}
+
+.boton-animado:hover {
+  transform: scale(1.1);
+}
+
+/* Animación */
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(140, 255, 218, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(140, 255, 218, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(140, 255, 218, 0.7);
+  }
+}
