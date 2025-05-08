@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/toDoList.css" />
     <link rel="stylesheet" href="../styles/calculadora.css" />
     <link rel="stylesheet" href="../styles/juegoNumeros.css" />
+    <link rel="stylesheet" href="../styles/divisa.css">
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -1159,7 +1160,25 @@ z"
           </div>
         </div>
       </section>
-
+      <section id="conversor-de-divisas">
+        <div class="converter">
+          <h2>Conversor de Moneda</h2>
+          
+          <label for="amount">Cantidad</label>
+          <input type="number" id="amount" placeholder="Ej: 100" min="0" />
+      
+          <label for="from">De:</label>
+          <select id="from"></select>
+      
+          <label for="to">A:</label>
+          <select id="to"></select>
+      
+          <button id="convertBtn">Convertir</button>
+      
+          <div class="result" id="result"></div>
+          <div class="error" id="error"></div>
+        </div>
+      </section>
       <section id="juego-numeros">
         <h1>Adivina el número</h1>
         <p>Adivina el número secreto entre 1 y 100.</p>
@@ -1176,5 +1195,6 @@ z"
     <script src="../js/toDoList.js"></script>
     <script src="../js/calculadora.js"></script>
     <script src="../js/juegoNumeros.js"></script>
+    <script src="../js/divisas.js"></script>
   </body>
 </html>
