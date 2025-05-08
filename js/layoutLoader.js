@@ -2,7 +2,7 @@ async function loadLayout(id, file) {
   const element = document.getElementById(id);
   if (element) {
     try {
-      const response = await fetch(`./layout/${file}`); // Updated path
+      const response = await fetch(`/layout/${file}`); // Use absolute path from root
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
