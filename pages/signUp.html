@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/signUp.css">
+    <script type="text/javascript" src="../js/layoutLoader.js" defer></script>
+    <script type="text/javascript" src="../js/validation.js" defer></script>
+    <title>Resgistro</title>
+  </head>
+  <body class="bg-sign-up">
+    <!-- <div id="nav"></div> -->
+    <main>
+      <div class="wrapper">
+        <h1>Resgistrate</h1>
+        <p id="error-mensajes"></p>
+        <form id="signUpForm">
+          <div >
+            <label for="nombre-input">
+              <span class="material-icons">person</span>
+            </label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre-input"
+              placeholder="Nombre"
+              
+            />
+          </div>
+          <div>
+            <label for="email-input">
+              <span class="material-icons">email</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              id="email-input"
+              placeholder="Correo Electronico"
+              
+            />
+          </div>
+          <div>
+            <label for="password-input">
+              <span class="material-icons">lock</span>
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password-input"
+              autocomplete="new-password"
+              placeholder="Contraseña"
+              
+            />
+          </div>
+          <div>
+            <label for="repeat-password-input">
+              <span class="material-icons">lock</span>
+            </label>
+            <input
+              type="text"
+              name="repeat-password"
+              id="repeat-password-input"
+              autocomplete="off"
+              placeholder="Repita su Contraseña"
+              
+            />
+          </div>
+          <button type="submit">Registrarse</button>
+        </form>
+        <p>¿ya tienes una cuenta? <a href="./login.html">Iniciar Sesión</a></p>
+      </div>
+    </main>
+    <!-- <div id="footer"></div> -->
+  </body>
+</html>
