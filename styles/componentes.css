@@ -7,22 +7,53 @@
     grid-column: 1/13;
     grid-row: 1/2;
   }
-  & :is(#pricing-plan, #reloj-digital){
+  & :is(#pricing-plan, #reloj-digital) {
     grid-column: 3/11;
   }
-  & :is(#pricing-plan, #reloj-digital, #to-do-list, #calculadora, #conversor-de-divisas, #juego-numeros){
+  &
+    :is(
+      #pricing-plan,
+      #reloj-digital,
+      #to-do-list,
+      #calculadora,
+      #conversor-de-divisas,
+      #juego-numeros,
+      #tabla-responsive
+    ) {
     padding: 0;
   }
-  & #to-do-list{
+  & #to-do-list {
     grid-column: 3/8;
   }
-  & #calculadora{
+  & #calculadora {
     grid-column: 8/11;
   }
-  & #conversor-de-divisas{
+  & #conversor-de-divisas {
     grid-column: 3/6;
   }
-  & #juego-numeros{
+  & #juego-numeros {
     grid-column: 7/11;
+  }
+  & #tabla-responsive{
+    grid-column: 2/12;
+  }
+}
+@media(max-width: 1200px){
+  #componentes{
+    & #pricing-plan{
+      grid-column: 3/11;
+    }
+    & :is(
+      #reloj-digital,
+      #to-do-list,
+      #calculadora,
+      #conversor-de-divisas,
+      #juego-numeros,
+      #tabla-responsive
+    ) {
+      grid-column: 1/13;
+      place-items: center;
+    }
+
   }
 }

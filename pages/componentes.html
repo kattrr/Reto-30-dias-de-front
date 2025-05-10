@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../styles/nav.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
 
-    <link rel="stylesheet" href="../styles/componentes.css">
+    <link rel="stylesheet" href="../styles/componentes.css" />
     <link rel="stylesheet" href="../styles/princingPlan.css" />
     <link rel="stylesheet" href="../styles/reloj.css" />
     <link rel="stylesheet" href="../styles/toDoList.css" />
     <link rel="stylesheet" href="../styles/calculadora.css" />
     <link rel="stylesheet" href="../styles/juegoNumeros.css" />
-    <link rel="stylesheet" href="../styles/divisa.css">
+    <link rel="stylesheet" href="../styles/divisa.css" />
+    <link rel="stylesheet" href="../styles/tabla-responsive.css">
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -192,8 +193,7 @@ z"
               fill="#a997df"
               opacity="1.000000"
               stroke="none"
-              d="
-M141.995865,311.159943 
+              d="M141.995865,311.159943 
 	C131.577698,312.324219 121.159538,313.488739 110.741302,314.652466 
 	C109.768524,314.761139 108.795219,314.865082 107.409515,314.901428 
 	C99.149460,309.508148 91.092247,304.465057 83.508507,298.789307 
@@ -1167,18 +1167,18 @@ z"
       <section id="conversor-de-divisas">
         <div class="converter">
           <h2>Conversor de Moneda</h2>
-          
+
           <label for="amount">Cantidad</label>
           <input type="number" id="amount" placeholder="Ej: 100" min="0" />
-      
+
           <label for="from">De:</label>
           <select id="from"></select>
-      
+
           <label for="to">A:</label>
           <select id="to"></select>
-      
+
           <button id="convertBtn">Convertir</button>
-      
+
           <div class="result" id="result"></div>
           <div class="error" id="error"></div>
         </div>
@@ -1192,6 +1192,41 @@ z"
         </div>
         <p id="result"></p>
         <button id="restartButton">Reiniciar</button>
+      </section>
+      <section id="tabla-responsive">
+        <h2>Listado de Usuarios</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Rol</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="#">1</td>
+                <td data-label="Nombre">Ana Gómez</td>
+                <td data-label="Correo">ana@example.com</td>
+                <td data-label="Rol">Diseñadora</td>
+              </tr>
+              <tr>
+                <td data-label="#">2</td>
+                <td data-label="Nombre">Carlos Pérez</td>
+                <td data-label="Correo">carlos@example.com</td>
+                <td data-label="Rol">Desarrollador</td>
+              </tr>
+              <tr>
+                <td data-label="#">3</td>
+                <td data-label="Nombre">Lucía Ramírez</td>
+                <td data-label="Correo">lucia@example.com</td>
+                <td data-label="Rol">QA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
     <div id="footer"></div>
