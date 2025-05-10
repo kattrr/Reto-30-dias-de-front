@@ -1,9 +1,9 @@
 #pricing-plan {
   display: grid;
-  width: 100%;
+  max-width: 100%;
   grid-template-columns:
     repeat(auto-fit, minmax(350px, 1fr));
-  column-gap: 8rem;
+  column-gap: 4rem;
   row-gap: 4rem;
   align-items: center;
   & h2{
