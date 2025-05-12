@@ -1,0 +1,51 @@
+.faq {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #FFB000;
+  margin-bottom: 1.5rem;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background: #fff8f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.accordion-header::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.accordion-header[aria-expanded="true"]::after {
+  content: '−';
+}
+
+.accordion-body {
+  padding: 1rem;
+  background: #fff;
+  border-left: 3px solid #FFB000;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  animation: fade 0.3s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scaleY(0.95); }
+  to { opacity: 1; transform: scaleY(1); }
+}

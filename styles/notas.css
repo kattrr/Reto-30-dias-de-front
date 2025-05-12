@@ -1,0 +1,70 @@
+#notas {
+  & form {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 500px;
+    & button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: var(--accent);
+    }
+    & input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: var(--light-purple);
+    }
+  }
+}
+#notas .note {
+  background: var(--primary);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  color: var(--bg);
+}
+
+#notas .note .note-actions {
+  margin-top: 1em;
+}
+
+#notas .note .note-actions button {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  background-color: var(--light-purple);
+  color: black;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-clear {
+  background: var(--danger);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}

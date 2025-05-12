@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="../styles/calculadora.css" />
     <link rel="stylesheet" href="../styles/juegoNumeros.css" />
     <link rel="stylesheet" href="../styles/divisa.css" />
-    <link rel="stylesheet" href="../styles/tabla-responsive.css">
+    <link rel="stylesheet" href="../styles/tabla-responsive.css" />
+    <link rel="stylesheet" href="../styles/notas.css">
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -1228,6 +1229,17 @@ z"
           </table>
         </div>
       </section>
+      <section id="notas">
+        <h2>📝 Mis Notas</h2>
+
+<form id="noteForm">
+  <input type="text" id="title" placeholder="Título" required />
+  <textarea id="content" placeholder="Contenido..." required></textarea>
+  <button type="submit">Guardar Nota</button>
+</form>
+
+<div id="notesList"></div>
+<button id="clearAllBtn" class="btn-clear">🗑️ Eliminar todas</button> 
     </main>
     <div id="footer"></div>
     <script src="../js/reloj.js"></script>
@@ -1235,5 +1247,6 @@ z"
     <script src="../js/calculadora.js"></script>
     <script src="../js/juegoNumeros.js"></script>
     <script src="../js/divisas.js"></script>
+    <script src="../js/notas.js"></script>
   </body>
 </html>

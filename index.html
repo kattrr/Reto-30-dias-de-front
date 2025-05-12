@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/info.css" />
     <link rel="stylesheet" href="./styles/galeria.css" />
+    <link rel="stylesheet" href="./styles/faq.css" />
     <script src="./js/layoutLoader.js"></script>
   </head>
   <body>
@@ -316,9 +317,29 @@
           <div id="modal-caption"></div>
         </div>
       </section>
+      <section class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="accordion">
+          <button class="accordion-header" aria-expanded="false" aria-controls="faq1">¿Qué es el reto 30 días de Front-end?</button>
+          <div class="accordion-body" id="faq1" role="region" hidden>
+            <p>Es un desafío diario para mejorar tus habilidades en HTML, CSS y JavaScript durante 30 días consecutivos.</p>
+          </div>
+
+          <button class="accordion-header" aria-expanded="false" aria-controls="faq2">¿Necesito experiencia previa?</button>
+          <div class="accordion-body" id="faq2" role="region" hidden>
+            <p>No, puedes comenzar desde lo más básico. El reto es progresivo y didáctico.</p>
+          </div>
+
+          <button class="accordion-header" aria-expanded="false" aria-controls="faq3">¿Dónde puedo compartir mis avances?</button>
+          <div class="accordion-body" id="faq3" role="region" hidden>
+            <p>Puedes compartir tus proyectos en redes sociales o en plataformas como GitHub.</p>
+          </div>
+        </div>
+      </section>
     </main>
     <div id="footer"></div>
     <script src="./js/galeria.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/faq.js"></script>
   </body>
 </html>

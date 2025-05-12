@@ -37,6 +37,9 @@
   & #tabla-responsive{
     grid-column: 2/12;
   }
+  & #notas{
+    grid-column: 2/12;
+  }
 }
 @media(max-width: 1200px){
   #componentes{
@@ -49,7 +52,8 @@
       #calculadora,
       #conversor-de-divisas,
       #juego-numeros,
-      #tabla-responsive
+      #tabla-responsive,
+      #notas
     ) {
       grid-column: 1/13;
       place-items: center;
