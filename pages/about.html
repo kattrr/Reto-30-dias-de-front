@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/bCard.css" />
     <link rel="stylesheet" href="../styles/contacto.css" />
+    <link rel="stylesheet" href="../styles/testimonial.css">
+    <link rel="stylesheet" href="../styles/galeria.css">
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -82,7 +84,7 @@
           <span class="bottom-text">KRR</span>
         </div>
       </section>
-      <section id="contacto">
+      <section id="contacto" class=" galeria">
         <form class="formulario-contacto" aria-label="Formulario de contacto">
           <h2>Contáctame</h2>
 
@@ -124,7 +126,14 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
+      <section class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="marquee">
+          <div class="track" id="track"></div>
+        </div>
+      </section>
     </main>
     <div id="footer"></div>
+    <script src="../js/testimonial.js"></script>
   </body>
 </html>
