@@ -15,6 +15,7 @@ async function loadLayout(id, file) {
 
       // Adjust relative paths in the loaded content
       if (id === "nav") adjustNavLinks(basePath);
+      if (id === "footer") adjustFooterLogo(basePath);
     } catch (error) {
       console.error('Error loading layout:', error);
     }
@@ -29,6 +30,16 @@ function adjustNavLinks(basePath) {
       link.setAttribute("href", `${basePath}/${href}`);
     }
   });
+}
+
+function adjustFooterLogo(basePath) {
+  const logo = document.querySelector("#footer .logo img");
+  if (logo) {
+    const src = logo.getAttribute("src");
+    if (src && !src.startsWith("http")) {
+      logo.setAttribute("src", `${basePath}${src}`);
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
