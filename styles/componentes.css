@@ -34,10 +34,7 @@
   & #juego-numeros {
     grid-column: 7/11;
   }
-  & #tabla-responsive{
-    grid-column: 2/12;
-  }
-  & #notas{
+  & #tabla-responsive, #notas, .progreso{
     grid-column: 2/12;
   }
 }
@@ -53,7 +50,8 @@
       #conversor-de-divisas,
       #juego-numeros,
       #tabla-responsive,
-      #notas
+      #notas,
+      .progreso
     ) {
       grid-column: 1/13;
       place-items: center;
