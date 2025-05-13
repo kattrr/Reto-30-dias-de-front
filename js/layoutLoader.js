@@ -2,7 +2,9 @@ async function loadLayout(id, file) {
   const element = document.getElementById(id);
   if (element) {
     try {
-      const response = await fetch(`/layout/${file}`); // Use absolute path from root
+      const baseUrl = "https://kattrr.github.io"; // Base URL for GitHub Pages
+      // const baseUrl = "localhost:5500";
+      const response = await fetch(`${baseUrl}/layout/${file}`); // Use absolute path
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
