@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/clima.css">
+    <script src="../js/layoutLoader.js" defer></script>
+    <title>Clima - Reto Día 21/30</title>
+  </head>
+  <body>
+    <header id="nav"></header>
+    <main>
+      <section id="climas">
+        <h1>Conoce el Clima de Hoy</h1>
+        <div class="container">
+          <div class="search-box">
+            <i class="material-symbols-outlined">
+              explore
+            </i>
+            <input type="text" placeholder="Ingresa una Ubicación" />
+            <button id="search-button" class="search material-symbols-outlined">
+              search
+            </button>
+          </div>
+          <div class="clima-box">
+            <div class="box">
+              <div class="info-clima">
+                <div class="clima">
+                  <img src="../img/cloud.png" alt="imagen clima">
+                  <p class="temperatura">16<span>°C</span></p>
+                  <p class="descripcion">Broken clouds</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clima-detalles">
+            <div class="humedad">
+              <i class="material-symbols-outlined">water</i>
+              <div class="texto">
+                <div class="info-humedad">
+                  <span>0%</span>
+                  <p>Humedad</p>
+                </div>
+              </div>
+            </div>
+            <div class="viento">
+              <i class="material-symbols-outlined">air</i>
+              <div class="texto">
+                <div class="info-viento">
+                  <span>0 Km/h</span>
+                  <p>Velocidad del viento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="no-encontrado">
+            <div class="box">
+              <img src="../img/404.webp" alt="no encontrado">
+              <p>Oops! Ubicación no Encontrada!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="../js/clima.js"></script>
+  </body>
+</html>

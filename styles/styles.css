@@ -8,6 +8,7 @@
   --light-rose: oklch(0.85 0.0437 325.95);
   --shadow: oklch(0.45 0.0716 281.14 / 0.5);
   --danger: oklch(0.68 0.175 16.27);
+  --white: oklch(1 0 0)
 }
 * {
   box-sizing: border-box;
@@ -35,7 +36,7 @@ p {
   font-size: 1.05vmax;
   text-align: center;
   margin-top: 2em;
-  color: inherit;
+  /* color: inherit; */
 }
 main {
   text-align: center;
@@ -98,6 +99,9 @@ dialog {
   box-shadow: 0 4px 15px var(--shadow);
   transition: transform 0.3s ease-in-out;
   animation: pulso 2s infinite ease-in-out;
+  & a{
+    color: var(--black);
+  }
 }
 
 .boton-animado:hover {
