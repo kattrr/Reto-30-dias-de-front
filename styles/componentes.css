@@ -28,15 +28,16 @@
   & #calculadora {
     grid-column: 8/11;
   }
-  & #conversor-de-divisas {
+  & #conversor-de-divisas, .progreso {
     grid-column: 3/6;
   }
-  & #juego-numeros {
+  & #juego-numeros, .seccion-popup {
     grid-column: 7/11;
   }
-  & #tabla-responsive, #notas, .progreso{
+  & #tabla-responsive, #notas {
     grid-column: 2/12;
   }
+
 }
 @media(max-width: 1200px){
   #componentes{
@@ -51,7 +52,8 @@
       #juego-numeros,
       #tabla-responsive,
       #notas,
-      .progreso
+      .progreso,
+      .seccion-popup
     ) {
       grid-column: 1/13;
       place-items: center;
