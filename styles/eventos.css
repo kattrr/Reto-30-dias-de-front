@@ -1,0 +1,53 @@
+.eventos {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.eventos h2 {
+  text-align: center;
+  color: #4f517d;
+  margin-bottom: 2rem;
+}
+
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.evento {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.evento:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.fecha {
+  background-color: #a997df;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 8px;
+  min-width: 90px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.descripcion h3 {
+  margin: 0;
+  color: #08080d;
+}
+
+.descripcion p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}

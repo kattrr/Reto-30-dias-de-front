@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="../styles/notas.css" />
     <link rel="stylesheet" href="../styles/progressBar.css" />
     <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/quiz.css" />
+    <link rel="stylesheet" href="../styles/eventos.css" />
+
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -1268,6 +1271,42 @@ z"
           </div>
         </div>
       </section>
+      <section class="quiz-section">
+        <h2>Cuestionario interactivo</h2>
+        <form id="quizForm">
+          <div id="quizContainer"></div>
+          <button type="submit" class="btn-confirm">Enviar respuestas</button>
+        </form>
+        <div id="quizResult"></div>
+      </section>
+      <section class="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="eventos-grid">
+          <div class="evento">
+            <div class="fecha">18 May 2025</div>
+            <div class="descripcion">
+              <h3>Cumpleaños de Ana</h3>
+              <p>Celebración en casa con amigos y familia. 🎂</p>
+            </div>
+          </div>
+
+          <div class="evento">
+            <div class="fecha">25 May 2025</div>
+            <div class="descripcion">
+              <h3>Fiesta de Graduación</h3>
+              <p>Una noche para recordar. Dress code: elegante. 🎓</p>
+            </div>
+          </div>
+
+          <div class="evento">
+            <div class="fecha">05 Jun 2025</div>
+            <div class="descripcion">
+              <h3>Concierto de Música</h3>
+              <p>Festival al aire libre en el parque central. 🎶</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <div id="footer"></div>
     <script src="../js/reloj.js"></script>
@@ -1278,5 +1317,6 @@ z"
     <script src="../js/notas.js"></script>
     <script src="../js/progressBar.js"></script>
     <script src="../js/modal.js"></script>
+    <script src="../js/quiz.js"></script>
   </body>
 </html>

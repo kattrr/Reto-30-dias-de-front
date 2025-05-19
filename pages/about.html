@@ -20,8 +20,9 @@
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/bCard.css" />
     <link rel="stylesheet" href="../styles/contacto.css" />
-    <link rel="stylesheet" href="../styles/testimonial.css">
-    <link rel="stylesheet" href="../styles/galeria.css">
+    <link rel="stylesheet" href="../styles/testimonial.css" />
+    <link rel="stylesheet" href="../styles/galeria.css" />
+    <link rel="stylesheet" href="../styles/portafolio.css" />
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -84,7 +85,46 @@
           <span class="bottom-text">KRR</span>
         </div>
       </section>
-      <section id="contacto" class=" galeria">
+      <section class="portafolio">
+        <div class="skills">
+          <h3>Habilidades</h3>
+          <ul>
+            <li>HTML5 / CSS3 / JavaScript</li>
+            <li>Diseño UX/UI</li>
+            <li>React / Vite</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+
+        <div class="projects">
+          <h3>Proyectos destacados</h3>
+          <div class="projects-grid">
+            <div class="project">
+              <img src="../img/dia-1.webp" alt="Proyecto 1" loading="lazy" />
+              <h4>Reto Día 1</h4>
+              <p>
+                Landing page sencilla como parte del reto 30 días de Frontend.
+              </p>
+            </div>
+            <div class="project">
+              <img src="../img/dia-4.webp" alt="Proyecto 2" loading="lazy" />
+              <h4>Calculadora</h4>
+              <p>Una calculadora básica construida solo con JS puro.</p>
+            </div>
+            <div class="project">
+              <img src="../img/dia-10.webp" alt="Proyecto 3" loading="lazy" />
+              <h4>Notas con LocalStorage</h4>
+              <p>
+                App para añadir, editar y eliminar notas con almacenamiento
+                local.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="galeria">
         <form class="formulario-contacto" aria-label="Formulario de contacto">
           <h2>Contáctame</h2>
 
