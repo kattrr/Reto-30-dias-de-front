@@ -15,6 +15,7 @@ const OPENNEWS_API_KEY = "TU_API_KEY_DE_GNEWS";
 ```
 ---
 2. **Obtener tus claves API**
+   
 🌦️ OpenWeatherMap – Clima actual y pronóstico:
 [openweathermap.org/api](https://openweathermap.org/api).
 
