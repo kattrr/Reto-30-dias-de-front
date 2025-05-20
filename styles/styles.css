@@ -40,7 +40,7 @@ p {
 }
 main {
   text-align: center;
-
+  min-height: 55dvh;
   & section {
     padding: 0 12dvw;
     margin-top: 5em;

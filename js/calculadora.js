@@ -23,4 +23,4 @@ function calculate() {
       clearDisplay();
     }, 2000);
   } 
-}
+} 

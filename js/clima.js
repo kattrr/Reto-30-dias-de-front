@@ -1,3 +1,4 @@
+import {OPENWEATHERMAP_API_KEY} from './config.js'
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".container");
   const search = document.getElementById("search-button");

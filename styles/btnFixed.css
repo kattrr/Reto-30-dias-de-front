@@ -8,7 +8,7 @@
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
-  top: 50vh;
+  
   left: 16px;
   overflow: hidden;
   transition-duration: .3s;
@@ -19,7 +19,6 @@
   text-decoration: none;
   animation: pulso 2s infinite ease-in-out;
 }
-
 /* plus sign */
 .sign {
   width: 100%;
@@ -63,4 +62,10 @@
 /* button click effect*/
 .Btn:active {
   transform: translate(2px ,2px);
+}
+.Btn.clima-btn{
+  top: 50vh;
+}
+.Btn.news-btn{
+  top: 60vh;
 }
