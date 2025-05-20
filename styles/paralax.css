@@ -1,0 +1,53 @@
+body, html {
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  position: relative;
+  min-height: 80vh; /* Cambiado de 100vh a 80vh para mejor transición */
+  background-attachment: fixed; /* Cambiado de fixed a scroll para mejor compatibilidad móvil */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: background-position;
+  transition: background-position 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.parallax-1 {
+  background-image: url('../img/parallax-1.jpg');
+}
+
+.parallax-2 {
+  background-image: url('../img/parallax-2.jpg');
+}
+
+.parallax-3 {
+  background-image: url('../img/parallax-3.jpg');
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.content {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.content h2 {
+  color: #4f517d;
+}
+
+.content p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}

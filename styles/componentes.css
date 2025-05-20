@@ -34,7 +34,7 @@
   & #juego-numeros, .seccion-popup {
     grid-column: 7/11;
   }
-  & #tabla-responsive, #notas, .quiz-section, .eventos {
+  & #tabla-responsive, #notas, .quiz-section, .eventos, .componente-parallax {
     grid-column: 2/12;
   }
 
@@ -55,11 +55,45 @@
       .progreso,
       .seccion-popup,
       .quiz-section,
-      .eventos
+      .eventos,
+      .componente-parallax
     ) {
       grid-column: 1/13;
       place-items: center;
     }
 
   }
+}
+.componente-parallax {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.componente-parallax h2 {
+  font-size: 1.8rem;
+  color: #4f517d;
+  margin-bottom: 1rem;
+}
+
+.enlace-parallax {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.enlace-parallax:hover,
+.enlace-parallax:focus {
+  transform: scale(1.02);
+  outline: none;
+}
+
+.enlace-parallax img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
