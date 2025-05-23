@@ -34,7 +34,7 @@
   & #juego-numeros, .seccion-popup {
     grid-column: 7/11;
   }
-  & #tabla-responsive, #notas, .quiz-section, .eventos, .componente-parallax {
+  & #tabla-responsive, #notas, .quiz-section, .eventos, .componente-parallax, .countdown {
     grid-column: 2/12;
   }
 
@@ -56,7 +56,8 @@
       .seccion-popup,
       .quiz-section,
       .eventos,
-      .componente-parallax
+      .componente-parallax, 
+      .countdown
     ) {
       grid-column: 1/13;
       place-items: center;

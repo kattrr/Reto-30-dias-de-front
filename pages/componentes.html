@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../styles/modal.css" />
     <link rel="stylesheet" href="../styles/quiz.css" />
     <link rel="stylesheet" href="../styles/eventos.css" />
-
+    <link rel="stylesheet" href="../styles/countdown.css" />
     <script src="../js/layoutLoader.js" defer></script>
   </head>
   <body>
@@ -1320,6 +1320,19 @@ z"
           />
         </a>
       </section>
+      <section class="countdown">
+        <div class="countdown-timer">
+          <ul class="countdown-timer-ul">
+            <p class="deadline-label"><span class="date"> </span></p>
+            <div class="countainer-ul">
+              <li class="date-item"><span class="days">0</span>Days</li>
+              <li class="date-item"><span class="hours">0</span>Hours</li>
+              <li class="date-item"><span class="minutes">0</span>Minutes</li>
+              <li class="date-item"><span class="seconds">0</span>Seconds</li>
+            </div>
+          </ul>
+        </div>
+      </section>
     </main>
     <div id="footer"></div>
     <script src="../js/reloj.js"></script>
@@ -1331,5 +1344,6 @@ z"
     <script src="../js/progressBar.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/quiz.js"></script>
+    <script src="../js/countdown.js"></script>
   </body>
 </html>

@@ -1,0 +1,86 @@
+.countdown-timer {
+    animation: fadeIn 2s ease-in-out;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 24px 0 16px 0;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    font-family: "quicksand", sans-serif;
+
+  }
+  .countdown-timer .countainer-ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    margin-top: 8px;
+    padding: 0 0 1.25em 0;
+  }
+  .countdown-timer-ul {
+    border-radius: 25px;
+    color: #fff;
+    margin: 0 auto;
+
+    text-align: center;
+    transition: opacity 0.7s ease-in-out;
+    width: 60%;
+    background: hsl(240, 24%, 9%);
+    
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+  }
+  .countdown-timer-ul .deadline-label {
+    color: #bdbdf7;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1em 0;
+  }
+  .countdown-timer .date-item {
+    background-color: hsl(255, 53%, 73%);
+    border-radius: 12px;
+    color: #08080d;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 16%;
+    margin: 0 1em;
+    box-shadow: 0 2px 8px 0 rgba(80,80,120,0.10);
+    transition: background 0.2s;
+    font-weight: 700;
+    padding: 1em 0;
+  }
+  .countdown-timer .date-item:hover {
+    background-color: hsl(255, 53%, 83%);
+    color: #08080d;
+  }
+  .countdown-timer ul {
+    margin-bottom: 0px;
+    padding: 0px;
+    & span.date{
+      color: var(--white);
+    }
+  }
+  .countdown-timer ul li span {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+  }
+  @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+  }
