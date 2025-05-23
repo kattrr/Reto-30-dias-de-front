@@ -1,0 +1,33 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat en Tiempo Real</title>
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <script src="../js/layoutLoader.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/chat.css" />
+</head>
+<body>
+  <header>
+    <div id="nav"></div>
+  </header>
+  <main class="chat-container">
+    <div id="chat-box"></div>
+    <form id="chat-form">
+      <input id="nombre" class="form-control" placeholder="Nombre" required>
+      <input type="text" id="msg" placeholder="Escribí un mensaje..." autocomplete="off" required />
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <div id="footer"></div>
+  <!-- Agrega el script de socket.io apuntando al servidor local -->
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="../js/chat.js"></script> 
+</body>
+</html>
