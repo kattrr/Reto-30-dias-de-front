@@ -16,11 +16,28 @@ const OPENNEWS_API_KEY = "TU_API_KEY_DE_GNEWS";
 ---
 2. **Obtener tus claves API**
    
-🌦️ OpenWeatherMap – Clima actual y pronóstico:
+🌦️ OpenWeatherMap – Clima actual y pronóstico:  
 [openweathermap.org/api](https://openweathermap.org/api).
 
-📰 GNews – Noticias por idioma y país:
+📰 GNews – Noticias por idioma y país:  
 [gnews.io](https://gnews.io).
+
+---
+
+## 📅 Día 28: Backend y WebSocket
+
+Para el **día 28** del reto, es necesario crear un backend que funcione junto con este repositorio y que incluya soporte para WebSocket usando **socket.io**.
+
+Puedes optar por:
+
+- **Clonar el backend de referencia:**  
+  [https://github.com/kattrr/back-dia-28-reto-30-dias-de-front.git](https://github.com/kattrr/back-dia-28-reto-30-dias-de-front.git)
+
+- **Crear tu propio backend desde cero**, asegurándote de que sea compatible con este frontend y que implemente WebSocket con socket.io.
+
+> El backend debe estar correctamente conectado y funcionando con este repositorio para completar el reto del día 28.
+
+---
 
 
 
