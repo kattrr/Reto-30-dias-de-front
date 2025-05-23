@@ -1,5 +1,7 @@
 # Reto-30-dias-de-front
-Reto para mejorar mis Habilidades como Desarrolladora Front-End que encontre en LinkedIn credito a @pauincode en instagram
+
+Reto para mejorar mis habilidades como Desarrolladora Front-End que encontré en LinkedIn.  
+Crédito a [@pauincode](https://www.instagram.com/pauincode) en Instagram por la inspiración del reto.
 
 ---
 
@@ -9,11 +11,16 @@ Reto para mejorar mis Habilidades como Desarrolladora Front-End que encontre en 
 
 ```js
 const OPENWEATHERMAP_API_KEY = "TU_API_KEY_AQUI";
+const OPENNEWS_API_KEY = "TU_API_KEY_DE_GNEWS";
 ```
+---
+2. **Obtener tus claves API**
+   
+🌦️ OpenWeatherMap – Clima actual y pronóstico:
+[openweathermap.org/api](https://openweathermap.org/api).
 
-2. **Obtén tu API Key gratuita** desde [openweathermap.org/api](https://openweathermap.org/api).
+📰 GNews – Noticias por idioma y país:
+[gnews.io](https://gnews.io).
 
-> 🔐 **Importante:** No compartas tu API key en repositorios públicos.
-> Si vas a subir este proyecto a GitHub, considera usar `.gitignore` para excluir el archivo `config.js`.
 
 
