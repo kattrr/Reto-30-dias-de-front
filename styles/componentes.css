@@ -7,7 +7,7 @@
     grid-column: 1/13;
     grid-row: 1/2;
   }
-  & :is(#pricing-plan, #reloj-digital) {
+  & :is(#pricing-plan, #reloj-digital, .ecommerce) {
     grid-column: 3/11;
   }
   &
@@ -18,7 +18,8 @@
       #calculadora,
       #conversor-de-divisas,
       #juego-numeros,
-      #tabla-responsive
+      #tabla-responsive,
+      .ecommerce
     ) {
     padding: 0;
   }
@@ -57,7 +58,8 @@
       .quiz-section,
       .eventos,
       .componente-parallax, 
-      .countdown
+      .countdown,
+      .ecommerce
     ) {
       grid-column: 1/13;
       place-items: center;
